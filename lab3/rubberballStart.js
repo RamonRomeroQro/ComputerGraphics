@@ -1,8 +1,34 @@
 ////////////////////////////////////////////////////////////////////////////////
+/*
+    Copyright 2019 © Ramón Romero @ramonromeroqro
+	Description: Computer Graphics, ITESM.
+	Lab 3 - RubberBall
+	V040220192300
+	
+	This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    
+    
+    Three.js is distributed under the MIT License
+    Copyright © 2010-2019 three.js authors
+    
+  
+    
+*/
+
+
 /*global THREE, document, window  */
 var camera, scene, renderer;
 var cameraControls;
-const NumberOfCylinder = 700;
+var cilinders = 1024;
 
 var clock = new THREE.Clock();
 
@@ -35,24 +61,32 @@ function fillScene() {
  axes.position.y = 1;
  scene.add(axes);
 
- drawKooshBall();
+ drawBall();
+}
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
 }
 
-function drawKooshBall() {
+function drawBall() {
 
 	var cylinder;
 
 	// One material is defined here. You'll need to define a second
-	// material to get a multi-colored koosh ball. A good way is to use
+	// material to get a multi-colored rubber ball. A good way is to use
 	// an array.
-	var cylinderMaterial	= [
+	var cylinderMaterials	= [
 		new THREE.MeshPhongMaterial({ 
-			color: 0x5500DD,
+			color: 0x5500FF,
 			specular: 0xD1F5FD,
 			shininess: 100 
 		}),
 		new THREE.MeshPhongMaterial({
-			color: 0x00FFFF,
+			color: 0xFF0000,
+			specular: 0xF0FCFD,
+			shininess: 100
+		}),
+		new THREE.MeshPhongMaterial({
+			color: 0x00FF00,
 			specular: 0xF0FCFD,
 			shininess: 100
 		}),
@@ -66,10 +100,12 @@ function drawKooshBall() {
 
 	// YOUR CODE CHANGES BEGIN
 
-	for (var i = 0; i < NumberOfCylinder; i++) {
+	for (var i = 0; i < cilinders; i++) {
+	
+	
 
 		// create the cylinder object using the geometry and material above
-		var cylinder = new THREE.Mesh( cylinderGeo, cylinderMaterial[i%2] );
+		var cylinder = new THREE.Mesh( cylinderGeo, cylinderMaterials[getRandomInt(cylinderMaterials.length)] );
 
 		/*
 			For visualization purposes, we'll create a second cylinder by cloning
@@ -92,7 +128,7 @@ function drawKooshBall() {
 
 		/*
 		 get two diagonally-opposite corners. These points will need to be
-		 randomized to generate the koosh ball:
+		 randomized to generate the rubber ball:
 		*/
 		var x = Math.random();
 		var y = Math.random();
@@ -112,7 +148,7 @@ function drawKooshBall() {
 		 We'll rotate the cylinder around only the x axis for demonstration purposes.
 		 Rotations around arbitrary vectors will result in less readable values
 		 in the matrix.
-		 (this rotation axis will also need to be randomized for the koosh ball):
+		 (this rotation axis will also need to be randomized for the rubber ball):
 		*/
 		var rotX = Math.random() * 2 - 1;
 		var rotY = Math.random() * 2 - 1;

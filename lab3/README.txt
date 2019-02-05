@@ -7,23 +7,21 @@
 * What is your name?
 ***********************************************************************/
 
-<Replace this with your response--remember to delete the angle brackets>
-
+Jose Ramon Romero Chavez - A01700318
 
 
 /**********************************************************************
 * What browser and operating system did you test your program with?
 ***********************************************************************/
 
-<Replace this with your response>
+Firefox Quantum 64.0.2 (64-bit) on macOS Mojave 10.14 (18A391)
 
 
 /**********************************************************************
 * Approximately how many hours did you spend working on this assignment?
 ***********************************************************************/
 
-<Replace this with your response!>
-
+Around 2 hours
 
 
 /**********************************************************************
@@ -32,8 +30,7 @@
  * How can I make this assignment better?
  **********************************************************************/
 
-<Replace this with your response!>
-
+It was easier to under stand, especially thanks to what we saw in class.
 
 
 /**********************************************************************
@@ -42,4 +39,6 @@
  * doing the assignment, whether you enjoyed doing it, etc.
  **********************************************************************/
 
-<Replace this with your response!>
+I tried with more colors, and adding randomness to it. with 3 and 2 colors 
+using Math.random. It was a cool lab.
+
