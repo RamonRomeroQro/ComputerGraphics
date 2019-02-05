@@ -76,7 +76,7 @@ function drawBall() {
 	// an array.
 	var cylinderMaterials	= [
 		new THREE.MeshPhongMaterial({ 
-			color: 0x5500FF,
+			color: 0x5500DD,
 			specular: 0xD1F5FD,
 			shininess: 100 
 		}),
