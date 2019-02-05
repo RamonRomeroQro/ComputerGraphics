@@ -30,7 +30,7 @@ Around 2 hours
  * How can I make this assignment better?
  **********************************************************************/
 
-It was easier to under stand, especially thanks to what we saw in class.
+It was easier to understand, especially thanks to what we saw in class.
 
 
 /**********************************************************************
