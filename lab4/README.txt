@@ -7,7 +7,7 @@
 * What is your name?
 ***********************************************************************/
 
-<Replace this with your response--remember to delete the angle brackets>
+Jose Ramon Romero Chavez - A01700318
 
 
 
@@ -15,14 +15,14 @@
 * What browser and operating system did you test your program with?
 ***********************************************************************/
 
-<Replace this with your response>
+Firefox Quantum 64.0.2 (64-bit) on macOS Mojave 10.14 (18A391)
 
 
 /**********************************************************************
 * Approximately how many hours did you spend working on this assignment?
 ***********************************************************************/
 
-<Replace this with your response!>
+Around 2 hours
 
 
 
@@ -32,7 +32,9 @@
  * How can I make this assignment better?
  **********************************************************************/
 
-<Replace this with your response!>
+It was harder than the previous, it was necessary to repeat and check the 
+concepts related with the events and the interaction with matrixes, we should 
+check more examples in class, not only plain js or math
 
 
 
@@ -42,4 +44,4 @@
  * doing the assignment, whether you enjoyed doing it, etc.
  **********************************************************************/
 
-<Replace this with your response!>
+It was great to use, the base of the previous lab to do something better

@@ -1,3 +1,26 @@
+/*
+    Copyright 2019 © Ramón Romero @ramonromeroqro
+	Description: Computer Graphics, ITESM.
+	Lab 4 - Rotating Rubber Ball
+	V110220192300
+	
+	This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    
+    
+    Three.js is distributed under the MIT License
+	Copyright © 2010-2019 three.js authors
+	
+*/
+
 ////////////////////////////////////////////////////////////////////////////////
 /*global THREE, document, window  */
 var camera, scene, renderer;
