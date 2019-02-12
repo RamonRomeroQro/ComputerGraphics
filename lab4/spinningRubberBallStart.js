@@ -137,13 +137,6 @@ function render() {
 	slow down in a natural-looking way. This does not need to be physically accurate,
 	just reasonably natural looking.
 	*/
-    
-    if(spinSpeed > .005){
-        spinSpeed -= .001;
-    }else{
-        spinSpeed = 0;
-    }
-    
 	spinAngle = spinAngle + spinSpeed;
 
 	// setting matrix values directly requires disabling autoupdate
@@ -214,22 +207,17 @@ function onMouseMove(evt) {
 		and perpendicular to the direction the camera is looking. Since in this example
 		the camera is looking at the origin of the space, this vector will also happen to
 		be perpendicular to the camera's position vector.
+
 	 	You'll need to create a THREE.Vector3 object to represent the swipe vector.
 		*/
 
-        var swipeVector = new THREE.Vector3();
-        swipeVector = swipeVector.subVectors(swipeStart,swipeEnd);
-      
 		/*
 		TODO: Once you've got the swipe vector, you'll need to set the spinAxis for the
 		kooshball to spin around on. You'll use the swipe vector along with the camera.position
 		vector to derive this vector (see the assignment web page for more hints). Don't
 		forget to normalize!
 		*/
-              
-        spinAxis.crossVectors(swipeVector,camera.position);
-        spinAxis.normalize();
-      
+
 		/*
 		TODO: Set the spinSpeed value so that the speed the ball spins depends on the speed
 		of the swipe motion. This is going to be related to the length of the swipe vector and
@@ -239,9 +227,6 @@ function onMouseMove(evt) {
 		some adjusting to yield usable values for rotation, so divide it by a suitable value to
 		get it small enough.
 		*/
-      clock.stop();
-      
-      spinSpeed = (swipeVector.length()/clock.getElapsedTime())/5000;
 
 	}
 }
