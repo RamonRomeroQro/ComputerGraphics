@@ -1,6 +1,6 @@
 /**********************************************************************
  *  README.txt
- *  TC3022 - Robot
+ *  TC3022 - Barycentric coordinates
  **********************************************************************/
 
 /**********************************************************************
@@ -32,7 +32,7 @@ Arround 2 hours
  * How can I make this assignment better?
  **********************************************************************/
 
-The complexity of rendering movement
+It was hard to deal with the line vectors in the space
 
 
 /**********************************************************************
@@ -41,4 +41,4 @@ The complexity of rendering movement
  * doing the assignment, whether you enjoyed doing it, etc.
  **********************************************************************/
 
-We shold do more examples in class about this kind of movement.
+We shold do more examples in class about this kind of relative points.

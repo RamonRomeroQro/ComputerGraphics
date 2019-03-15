@@ -7,14 +7,15 @@
 * What is your name?
 ***********************************************************************/
 
-Jose Ramon Romero Chavez
+Jose Ramon Romero Chavez - A01700318
+
 
 
 /**********************************************************************
 * What browser and operating system did you test your program with?
 ***********************************************************************/
 
-Chrome, Ubuntu
+Firefox Quantum 64.0.2 (64-bit) on macOS Mojave 10.14 (18A391)
 
 
 
@@ -22,8 +23,7 @@ Chrome, Ubuntu
 * Approximately how many hours did you spend working on this assignment?
 ***********************************************************************/
 
-2
-
+Arround 2 hours
 
 
 /**********************************************************************
@@ -32,8 +32,7 @@ Chrome, Ubuntu
  * How can I make this assignment better?
  **********************************************************************/
 
-The angle inclination
-
+The complexity of rendering by pieces and joining.
 
 
 /**********************************************************************
@@ -41,3 +40,5 @@ The angle inclination
  * here. Feel free to provide any feedback on what you learned from
  * doing the assignment, whether you enjoyed doing it, etc.
  **********************************************************************/
+
+We shold do more examples in class about this kind of rendering by pieces
