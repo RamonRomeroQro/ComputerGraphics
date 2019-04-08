@@ -64,7 +64,10 @@ function fillScene() {
 
 class Robot {
     constructor(x, y, z, c) {
-        var root, robotChest, robotNeck, robotHead, robotHip, robotLeftHip, robotRightHip, robotRightKnee, robotLeftKnee, robotLeftAnkle, robotRightAnkle, robotRightShoulder, robotLeftShoulder, robotLeftElbow, robotRightElbow, robotLeftWritst, robotRightWrist;
+        var root, robotChest, robotNeck, robotHead, robotHip, robotLeftHip;
+        var robotRightHip, robotRightKnee, robotLeftKnee, robotLeftAnkle;
+        var robotRightAnkle, robotRightShoulder, robotLeftShoulder;
+        var robotLeftElbow, robotRightElbow, robotLeftWritst, robotRightWrist;
         root = new THREE.Group();
         root.position.y = y - 75;
         root.position.x = x;
@@ -209,7 +212,7 @@ class Robot {
     moveRobot() {
         this.counter += 0.15;
         let range = 0.15;
-        
+
         this.robotChest.rotateZ(-Math.cos(this.counter) * range * 0.02);
         this.robotChest.rotateZ(Math.cos(this.counter) * range * 0.01);
 
