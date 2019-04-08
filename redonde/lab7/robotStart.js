@@ -209,10 +209,7 @@ class Robot {
     moveRobot() {
         this.counter += 0.15;
         let range = 0.15;
-
-        this.robotHead.rotateZ(Math.cos(this.counter) * range * 0.02);
-        this.robotHead.rotateZ(-Math.cos(this.counter) * range * 0.1);
-
+        
         this.robotChest.rotateZ(-Math.cos(this.counter) * range * 0.02);
         this.robotChest.rotateZ(Math.cos(this.counter) * range * 0.01);
 
