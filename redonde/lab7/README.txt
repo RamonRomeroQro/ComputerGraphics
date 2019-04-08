@@ -23,7 +23,7 @@ Firefox Quantum 64.0.2 (64-bit) on macOS Mojave 10.14 (18A391)
 * Approximately how many hours did you spend working on this assignment?
 ***********************************************************************/
 
-Around 5 hours
+Around 7 hours
 
 
 /**********************************************************************
